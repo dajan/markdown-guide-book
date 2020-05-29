@@ -96,6 +96,6 @@ Il existe de nombreuses autres ressources que vous pouvez utiliser pour apprendr
 [14]:	https://pandoc.org/
 [15]:	https://www.contextgarden.net/
 
-[image-1]:	images/atom.png
+[image-1]:	images/atom-fr.png
 [image-2]:	images/dillinger.png
 [image-3]:	images/process.png
