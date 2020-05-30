@@ -48,7 +48,7 @@ Si vous ne pouvez pas vous séparer d'Evernote, essayez [Marxico][29], un édite
 
 Vous souhaitez publier un roman en auto-publication ? Essayez [Leanpub][31], un service qui prend vos fichiers au format Markdown et les transforme en livre électronique. Leanpub produit votre livre au format PDF, EPUB et MOBI. Si vous souhaitez créer des copies style livre de poche de votre livre, vous pouvez télécharger le fichier PDF vers un autre service tel que **[Kindle Direct Publishing][32]**. Pour en savoir plus sur l'écriture et l'auto-publication d'un livre à l'aide de Markdown, lisez [cet article de blog][33].
 
-## Pràsentations
+## Présentations
 
 Croyez-le ou non, vous pouvez générer des présentations à partir de fichiers au format Markdown. Il faut un peu de temps pour s'habituer à créer des présentations dans Markdown, mais une fois que vous avez pris le coup de main, c'est beaucoup plus rapide et facile que d'utiliser une application comme PowerPoint ou Keynote. [Remarque][34] ([projet GitHub][35]) est un outil en ligne de diaporama Markdown très populaire, tout comme [Cleaver][36] ([projet GitHub][37]). Si vous utilisez un Mac et préférez utiliser une application, consultez [Deckset][38] ou [Marked][39].
 
