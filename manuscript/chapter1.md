@@ -98,4 +98,4 @@ Il existe de nombreuses autres ressources que vous pouvez utiliser pour apprendr
 
 [image-1]:	images/atom-fr.png
 [image-2]:	images/dillinger.png
-[image-3]:	images/process.png
+[image-3]:	images/process-fr.png
