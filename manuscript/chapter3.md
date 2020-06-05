@@ -29,7 +29,7 @@ Une autre manière de créer des titre consiste à placer sous la ligne du titre
 
 ### Bonnes pratiques avec les titres
 
-Les applications Markdown ne traitent pas de la même manière les les lignes vides entre les titres et les pragraphes qui suivent. Pour assurer une bonne compatibilité de votre texte avec les différentes applications Markdown, veillez à séparer les paragraphes et les titres avec une ou plusieurs lignes vides.
+Les applications Markdown ne traitent pas de la même manière les lignes vides entre les titres et les pragraphes qui suivent. Pour assurer une bonne compatibilité de votre texte avec les différentes applications Markdown, veillez à séparer les paragraphes et les titres avec une ou plusieurs lignes vides.
 
 | Faites ceci                         | Ne faites pas cela                         |
 |---------------------------------|---------------------------------------|
