@@ -1,71 +1,71 @@
-# Cheat Sheet {#cheat-sheet}
+# Pense bête {#cheat-sheet}
 
-This cheat sheet provides a quick overview of all the Markdown syntax elements. It can't cover every edge case! If you need more information about any of these elements, refer back to the chapters on [basic](#basic-syntax) and [extended syntax](#extended-syntax).
+Cette fiche de référence donne un aperçu rapide de tous les éléments de la syntaxe de Markdown. Elle ne peut pas couvrir tous les cas de figure ! Si vous avez besoin de plus d'informations sur l'un de ces éléments, reportez-vous aux chapitres [Syntaxe de base](#basic-syntax) et [Syntaxe étendue](#extended-syntax).
 
-## Basic Syntax
+## Syntaxe de base
 
-These are the elements outlined in John Gruber's original design document. All Markdown applications support these elements.
+La syntaxe de base concerne les éléments décrits dans le document de conception original de John Gruber. Toutes les applications Markdown prennent en charge ces éléments.
 
-| Element           | Markdown Syntax                                      |
+| Élément           | Symtaxe Markdown                                      |
 |-------------------|------------------------------------------------------|
-| [Heading](#headings)  | `# H1`                                           |
+| [Titre](#headings)  | `# H1`                                           |
 |                   | `## H2`                                              |
 |                   | `### H3`                                             |
 |-------------------|------------------------------------------------------|
-| [Bold](#bold)     | `**bold text**`                                      |
+| [Gras](#bold)     | `**texte en gras**`                                      |
 |-------------------|------------------------------------------------------|
-| [Italic](#italic) | `*italicized text*`                                  |
+| [Italique](#italic) | `*texte en italique*`                                  |
 |-------------------|------------------------------------------------------|
-| [Blockquote](#blockquotes) |  `> blockquote`                             |
+| [Citation](#blockquotes) |  `> citation`                             |
 |-------------------|------------------------------------------------------|
-| [Ordered List](#ordered-lists)   | `1. First item`                       |
-|                   | `2. Second item`                                     |
-|                   | `3. Third item`                                      |
+| [Liste numérotée](#ordered-lists)   | `1. Premier élément`                       |
+|                   | `2. Deuxième élément`                                     |
+|                   | `3. Trosième élément`                                      |
 |-------------------|------------------------------------------------------|
-| [Unordered List](#unordered-lists) | `- First item`                      |
-|                   | `- Second item`                                      |
-|                   | `- Third item`                                       |
+| [Liste à puces](#unordered-lists) | `- Premier élément`                      |
+|                   | `- Deuxième élément`                                      |
+|                   | `- Troisième élément`                                       |
 |-------------------|------------------------------------------------------|
-| [Code](#code)     | `` `code` ``                                         |
+| [Code informatique](#code)     | `` `code` ``                                         |
 |-------------------|------------------------------------------------------|
-| [Horizontal Rule](#horizontal-rules)   |  `---`                          |
+| [Ligne horizontale](#horizontal-rules)   |  `---`                          |
 |-------------------|------------------------------------------------------|
-| [Link](#links)    |  `[title](https://www.example.com)`                  |
+| [Lien](#links)    |  `[titre du lien](https://www.exemple.ch)`                  |
 |-------------------|------------------------------------------------------|
-| [Image](#images)  |  `![alt text](image.jpg)`                            |
+| [Image](#images)  |  `![texte de remplacement](image.jpg)`                            |
 
 
-## Extended Syntax
+## Syntaxe étendue
 
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
+Ces éléments prolongent la syntaxe de base en y ajoutant des caractéristiques supplémentaires. Toutes les applications Markdown ne prennent pas en charge ces éléments.
 
-| Element           | Markdown Syntax                                      |
+| Élément           | Syntaxe Markdown                                      |
 |-------------------|------------------------------------------------------|
-| [Table](#tables)  | `| Syntax | Description |`                           |
+| [Table](#tables)  | `| Syntaxe | Description |`                           |
 |                   | `| ------ | ----------- |`                           |
-|                   | `| Header | Title |`                                 |
-|                   | `| Paragraph | Text |`                               |
+|                   | `| En-tête | Titre |`                                 |
+|                   | `| Paragraphe | Texte |`                              |
 |-------------------|------------------------------------------------------|
-| [Fenced Code Block](#fenced-code-blocks) | ```` ``` ````                 |
+| [Bloc de code encadré](#fenced-code-blocks) | ```` ``` ````                 |
 |                   | `{`                                                  |
-|                   |   `"firstName": "John",`                             |
-|                   |   `"lastName": "Smith",`                             |
-|                   |   `"age": 25`                                        |
+|                   |   `"prenom": "Dominique-Alain",`                             |
+|                   |   `"nom": "Jan",`                             |
+|                   |   `"age": 54`                                        |
 |                   | `}`                                                  |
 |                   | ```` ``` ````                                        |
 |-------------------|------------------------------------------------------|
-| [Footnote](#footnotes)  | `Here's a sentence with a footnote. [^1]`      |
+| [Note de pas de page](#footnotes)  | `Une phrase avec un renvoi à une note de bas de page. [^1]`      |
 |                   |                                                      |
-|                   | `[^1]: This is the footnote.`                        |
+|                   | `[^1]: Ceci est la note de bas de page.`                        |
 |-------------------|------------------------------------------------------|
-| [Heading ID](#heading-ids)  | `### My Great Heading {#custom-id}`        |
+| [Titre ID](#heading-ids)  | `### Mon beau titre {#votre-id}`        |
 |-------------------|------------------------------------------------------|
-| [Definition List](#definition-lists)  | `term`                           |
-|                   | `: definition`                                       |
+| [Liste de définitions](#definition-lists)  | `terme à définir`                           |
+|                   | `: définition`                                       |
 |-------------------|------------------------------------------------------|
-| [Strikethrough](#strikethrough)  | `~~The world is flat.~~`              |
+| [Barré](#strikethrough)  | `~~Le monde est plat.~~`              |
 |-------------------|------------------------------------------------------|
-| [Task List](#task-lists)  | `- [x] Write the press release`              |
-|                   | `- [ ] Update the website`                           |
-|                   | `- [ ] Contact the media`                            |
+| [Liste de tâches](#task-lists)  | `- [x] Écrire la présentation du livre`              |
+|                   | `- [ ] Mettre à jour le site web`                           |
+|                   | `- [ ] Contacter les médias`                            |
 
