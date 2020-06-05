@@ -1,98 +1,98 @@
-# Basic Syntax {#basic-syntax}
+# Syntaxe de base {#basic-syntax}
 
-Nearly all Markdown applications support the basic syntax outlined in John Gruber's original design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.
+La quasi-totalité des applications Markdown se conforment à la syntaxe de base décrite dans le document de conception original de John Gruber. Il y a des variations et des divergences mineures entre les processeurs Markdown - celles-ci sont notées en ligne chaque fois que cela est possible.
 
-## Headings {#headings}
+## Titres {#headings}
 
-To create a heading, add number signs (`#`) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (`<h3>`), use three number signs (e.g., `### My Header`).
+Pour créer un titre, ajoutez des dièses (`#`) devant un mot ou une phrase. Le nombre de dièses que vous utilisez doit correspondre au niveau du titre. Par exemple, pour créer un titre de niveau trois (`<h3>`), utilisez trois dièses (par exemple, `### Mon titre`).
 
 | Markdown                       | HTML                       |
 |--------------------------------|----------------------------|
-| `# Heading level 1`            | `<h1>Heading level 1</h1>` |
-| `## Heading level 2`           | `<h2>Heading level 2</h2>` |
-| `### Heading level 3`          | `<h3>Heading level 3</h3>` |
-| `#### Heading level 4`         | `<h4>Heading level 4</h4>` |
-| `##### Heading level 5`        | `<h5>Heading level 5</h5>` |
-| `###### Heading level 6`       | `<h6>Heading level 6</h6>` |
+| `# Titre niveau 1`            | `<h1>Titre niveau 1</h1>` |
+| `## Titre niveau 2`           | `<h2>Titre niveau 2</h2>` |
+| `### Titre niveau 3`          | `<h3>Titre niveau 3</h3>` |
+| `#### Titre niveau 4`         | `<h4<Titre niveau 4</h4>` |
+| `##### Titre niveau 5`        | `<h5>Titre niveau 5</h5>` |
+| `###### Titre nvieau 6`       | `<h6>Titre niveau 6</h6>` |
 
-### Alternate Syntax
+### Autre syntaxe possible
 
-Alternatively, on the line below the text, add any number of `==` characters for heading level 1 or `--` characters for heading level 2.
+Une autre manière de créer des titre consiste à placer sous la ligne du titre un nombre quelconque de `==` pour un titre de niveau 1 ou `--` pour un titre de niveau 2.
 
 | Markdown                       | HTML                                   |
 |--------------------------------|----------------------------------------|
-| `Heading level 1`              | `<h1>Heading level 1</h1>`             |
+| `Titre niveau 1`              | `<h1>Titre niveau 1</h1>`             |
 | `===============`              |                                        |
 |--------------------------------|----------------------------------------|
-| `Heading level 2`              | `<h2>Heading level 2</h2>`             |
+| `Titre niveau 2`              | `<h2>Titre niveau 2</h2>`             |
 | `---------------`              |                                        |
 
-### Heading Best Practices
+### Bonnes pratiques avec les titres
 
-Markdown applications don't agree on how to handle missing blank lines between a heading and the surrounding paragraphs. For compatibility, separate paragraphs and headings with one or more blank lines.
+Les applications Markdown ne traitent pas de la même manière les les lignes vides entre les titres et les pragraphes qui suivent. Pour assurer une bonne compatibilité de votre texte avec les différentes applications Markdown, veillez à séparer les paragraphes et les titres avec une ou plusieurs lignes vides.
 
-| Do this                         | Don't do this                         |
+| Faites ceci                         | Ne faites pas cela                         |
 |---------------------------------|---------------------------------------|
-| `This is a paragraph.`          | `This is a paragraph.`                |
-|                                 | `# Here's the heading`                |
-| `# Here's the heading`          | `And this is another paragraph.`      |
+| `C'est un paragraphe.`          | `C'est un paragraphe.`                |
+|                                 | `# Ceci est un titre 1`                |
+| `# Ceci est un titre 1`          | `Et ceci est un nouveau paragraphe.`      |
 |                                 |                                       |
-| `And this is another paragraph.` |                                      |
+| `Et ceci est un nouveau paragraphe.` |                                      |
 
-## Paragraphs
+## Paragraphes
 
-To create paragraphs, use a blank line to separate one or more lines of text.
+Pour créer des paragraphes, utilisez une ligne blanche pour séparer une ou plusieurs lignes de texte.
 
 {title="Markdown"}
 ~~~~~~~
-I really like using Markdown.
+J'aime beacuoup utiliser Markdown.
 
-I think I'll use it from now on.
+Je pense l'utiliser tout le temps dès aujourd'hui.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
-<p>I really like using Markdown.</p>
+<p>J'aime beacuoup utiliser Markdown.</p>
 
-<p>I think I'll use it from now on.</p>
+<p>Je pense l'utiliser tout le temps dès aujourd'hui.</p>
 ~~~~~~~
 
-The rendered output looks like this:
+Le texte mis en forme resemble alors à ceci :
 
-I really like using Markdown.
+J'aime beacuoup utiliser Markdown.
 
-I think I'll use it from now on.
+Je pense l'utiliser tout le temps dès aujourd'hui.
 
-### Paragraph Best Practices
+### Bonnes pratiques avec les paragraphes
 
-Don't indent paragraphs with spaces or tabs.
+N'indentez pas les paragraphes avec des espaces ou des tabulations.
 
-| Do this                         | Don't do this                         |
+| Faites ceci                         | Ne faites pas cela                         |
 |---------------------------------|---------------------------------------|
-| `Don't put tabs or spaces in front of your paragraphs.` | &nbsp;&nbsp;&nbsp;&nbsp;`This can result in unexpected formatting problems.` |
+| `Ne mettez pas des tabulateurs ou des espaces au début des paragraphes.` | &nbsp;&nbsp;&nbsp;&nbsp;`Ceci peut provoquer des problèmes de mise en page.` |
 |                                 |                                       |
-| `Keep lines left-aligned like this.` | &nbsp;&nbsp;`Don't add tabs or spaces in front of paragraphs.` |
+| `Gardez toutes les lignes alignée à gauche, comme ceci.` | &nbsp;&nbsp;`N'ajoutez pas d'espaces ou des tabulateurs en début des paragraphes.` |
 
-## Line Breaks
+## Sauts de ligne
 
-To create a line break (`<br>`), end a line with two or more spaces, and then type return.
+Pour créer un saut de ligne dans un même paragraphe (`<br>`), terminez la ligne avec au moins deux espaces, puis tappez sur la touche *retour* pour créer un nouveau paragraphe.
 
 {title="Markdown"}
 ~~~~~~~
-This is the first line.  
-And this is the second line.
+Ceci est la première ligne.  
+Et cela est la seconde.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
-<p>This is the first line.<br />
-And this is the second line.</p>
+<p>Ceci est la première ligne.<br />
+Et cela est la seconde.</p>
 ~~~~~~~
 
-The rendered output looks like this:
+Le texte mis en forme resemble alors à ceci :
 
-This is the first line.  
-And this is the second line.
+Ceci est la première ligne.  
+Et cela est la seconde.
 
 ### Line Break Best Practices
 
