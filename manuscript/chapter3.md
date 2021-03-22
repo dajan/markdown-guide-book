@@ -337,169 +337,168 @@ The rendered output looks like this:
 
 Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.
 
-### Ordered Lists {#ordered-lists}
+### Liste numérotées {#ordered-lists}
 
-To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.
+Pour créer une liste numérotée, ajoutez des éléments de ligne avec des numéros suivis de points. Les chiffres ne doivent pas nécessairement être dans l'ordre numérique, mais la liste doit commencer par le chiffre un.
 
 {title="Markdown"}
 ~~~~~~~
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
+4. Quatrième élément
 
-1. First item
-1. Second item
-1. Third item
-1. Fourth item
+1. Premier élément
+1. Deuxième élément
+1. Troisième élément
+1. Quatrième élément
 
-1. First item
-8. Second item
-3. Third item
-5. Fourth item
+1. Premier élément
+8. Deuxième élément
+3. Troisième élément
+5. Quatrième élément
 ~~~~~~~
 
-The HTML output of all three example lists is the same.
+La sortie HTML des trois exemples de listes est la même.
 
 {title="HTML", lang=html}
 ~~~~~~~
 <ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>Premier élément</li>
+  <li>Deuxième élément</li>
+  <li>Troisième élément</li>
+  <li>Quatrième élément</li>
 </ol>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à ceci :
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
+4. Quatrième élément
 
-#### Nesting List Items
+#### Listes à plusieurs niveaux
 
-To nest line items in an ordered list, indent the items four spaces or one tab.
+Pour créer un nouveau niveau dans une liste, mettez les éléments du nouveau niveau en retrait de quatre espaces ou d'une tabulation.
 
 {title="Markdown"}
 ~~~~~~~
-1. First item
-2. Second item
-3. Third item
-    1. Indented item
-    2. Indented item
-4. Fourth item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
+    1. Sous-élément 1
+    2. Sous-élément 2
+4. Quatrième élément
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
 <ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item
+  <li>Premier élément</li>
+  <li>Deuxième élément</li>
+  <li>Troisième élément
     <ol>
-      <li>Indented item</li>
-      <li>Indented item</li>
+      <li>Sous-élément 1</li>
+      <li>Sous-élément 2</li>
     </ol>
   </li>
-  <li>Fourth item</li>
+  <li>Quatrième élément</li>
 </ol>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à ceci :
 
-1. First item
-2. Second item
-3. Third item
-    1. Indented item
-    2. Indented item
-4. Fourth item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
+    1. Sous-élément 1
+    2. Sous-élément 2
+4. Quatrième élément
 
-### Unordered Lists {#unordered-lists}
+### Liste à puces {#unordered-lists}
 
-To create an unordered list, add dashes (`-`), asterisks (`*`), or plus signs (`+`) in front of line items.
+Pour créer un liste à puce, ajoutez soit un trait (`-`), un asterisque (`*`), ou un signe plus (`+`) devant chaque élément de la liste.
 
 {title="Markdown"}
 ~~~~~~~
-- First item
-- Second item
-- Third item
-- Fourth item
+- Premier élément
+- Deuxième élément
+- Troisième élément
+- Quatrième élément
 
-* First item
-* Second item
-* Third item
-* Fourth item
+* Premier élément
+* Deuxième élément
+* Troisième élément
+* Quatrième élément
 
-+ First item
-* Second item
-- Third item
-+ Fourth item
++ Premier élément
+* Deuxième élément
+- Troisième élément
++ Quatrième élément
 ~~~~~~~
 
-The HTML output of all three example lists is the same.
+La sortie HTML des trois exemples de listes est la même.
 
 {title="HTML", lang=html}
 ~~~~~~~
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item </li>
+  <li>Premier élément</li>
+  <li>Deuxième élément</li>
+  <li>Troisième élément</li>
+  <li>Quatrième élément</li>
 </ul>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à ceci :
 
-- First item
-- Second item
-- Third item
-- Fourth item
+- Premier élément
+- Deuxième élément
+- Troisième élément
+- Quatrième élément
 
-#### Nesting List Items
+#### Liste à puces à plusieurs niveaux
 
-To nest line items in an unordered list, indent the items four spaces or one tab.
+Pour créer un nouveau niveau dans une liste, mettez les éléments du nouveau niveau en retrait de quatre espaces ou d'une tabulation.
 
 {title="Markdown"}
 ~~~~~~~
-- First item
-- Second item
-- Third item
-    - Indented item
-    - Indented item
-- Fourth item
+- Premier élément
+- Deuxième élément
+- Troisième élément
+    - Sous-élément 1
+    - Sous-élément 2
+- Quatrième élément
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
 <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item
+  <li>Premier élément</li>
+  <li>Deuxième élément</li>
+  <li>Troisième élément</li>
     <ul>
-      <li>Indented item</li>
-      <li>Indented item</li>
+      <li>Sous-élément 1</li>
+      <li>Sous-élément 2</li>
     </ul>
-  </li>
-  <li>Fourth item</li>
+  <li>Quatrième élément</li>
 </ul>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat est le suivant :
 
-- First item
-- Second item
-- Third item
-    - Indented item
-    - Indented item
-- Fourth item
+- Premier élément
+- Deuxième élément
+- Troisième élément
+    - Sous-élément 1
+    - Sous-élément 2
+- Quatrième élément
 
-### Adding Elements in Lists
+### Ajouter un nouvel élément à une lsite
 
-To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
+Pour ajouter un autre élément dans une liste tout en préservant la continuité de la liste, mettez l'élément en retrait de quatre espaces ou d'une tabulation, comme le montrent les exemples suivants.
 
-#### Paragraphs
+#### Paragraphes
 
 {title="Markdown"}
 ~~~~~~~
@@ -531,7 +530,7 @@ The rendered output looks like this:
 
 *   And here's the third list item.
 
-#### Blockquotes
+#### Citation
 
 {title="Markdown"}
 ~~~~~~~
@@ -566,7 +565,7 @@ The rendered output looks like this:
 
 *   And here's the third list item.
 
-#### Code Blocks
+#### Bloc de code informatique
 
 [Code blocks](#code-blocks) are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
 
@@ -643,7 +642,7 @@ The rendered output looks like this:
 
 3.  Close the file.
 
-## Code {#code}
+## Code informatique {#code}
 
 To denote a word or phrase as code, enclose it in backticks (`` ` ``).
 
