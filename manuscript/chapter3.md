@@ -94,248 +94,248 @@ Le texte mis en forme resemble alors à ceci :
 Ceci est la première ligne.  
 Et cela est la seconde.
 
-### Line Break Best Practices
+### Bonnes pratiques avec les sauts de ligne
 
-You can use two or more spaces (referred to as "trailing whitespace") for line breaks in nearly every Markdown application, but it's controversial. It's hard to see trailing whitespace in an editor, and many people accidentally or intentionally put two spaces after every sentence. For this reason, you may want to use something other than trailing whitespace for line breaks. Fortunately, there is another option supported by nearly every Markdown application: the `<br>` HTML tag.
+Vous pouvez utiliser deux espaces, ou plus, (appelés "espaces blancs de fin de ligne") pour les sauts de ligne dans presque toutes les applications Markdown, mais cette pratique est controversée. Il est difficile de voir les espaces de fin de ligne dans un éditeur, et de nombreuses personnes mettent accidentellement ou intentionnellement deux espaces après chaque phrase (vieille habitude anglosaxone). C'est la raison pour laquelle vous voudrez peut-être utiliser autre chose que les espaces de queue pour les sauts de ligne. Heureusement, il existe une autre option prise en charge par presque toutes les applications Markdown : la balise HTML `<br>`.
 
-For compatibility, use trailing white space or the `<br>` HTML tag at the end of the line.
+Pour des raisons de compatibilité, utilisez l'espace blanc de fin de ligne ou la balise HTML `<br>` à la fin de la ligne.
 
-There are two other options I don't recommend using. CommonMark and a few other lightweight markup languages let you type a backslash (`\`) at the end of the line, but not all Markdown applications support this, so it isn't a great option from a compatibility perspective. And at least a couple lightweight markup languages don't require anything at the end of the line — just type return and they'll create a line break.
+Il existe deux autres options que je ne recommande pas d'utiliser. CommonMark et quelques autres langages de balisage légers vous permettent de taper une barre oblique inverse (*backslash*) (`\`) à la fin d'une ligne, mais toutes les applications Markdown ne le prennent pas en charge, ce qui n'est pas une bonne option du point de vue de la compatibilité. Et au moins deux langages de balisage légers ne nécessitent rien en fin de ligne - il suffit de taper return pour créer un saut de ligne.
 
-| Do this                         | Don't do this                         |
+| Faites ceci                         | Ne faites pas cela                         |
 |---------------------------------|---------------------------------------|
-| `First line with two spaces after.` | `First line with a backslash after.\` |
-| `And the next line.`            | `And the next line.`                  |
+| `Première ligne avec deux espaces après le point.` | `Première ligne avec une barre oblique inverse après le point.\` |
+| `Puis la ligne suivante.`            | `Puis la ligne suivante.`                  |
 |                                 |                                       |
-| `With the HTML tag after.<br>`  | `With nothing after.`                 |
-| `And the next line.`            | `And the next line.`                  |
+| `Utiliser la balise HTML après le point.<br>`  | `Rien après le point.`                 |
+| `Puis la ligne suivante.`            | `Puis la ligne suivante.`                  |
 
-## Emphasis {#emphasis}
+## Mise en évidence {#emphasis}
 
-You can add emphasis by making text bold or italic.
+Vous pouvez mettre en évidence une partie du texte en y applicant du gras ou de l'italique.
 
-### Bold {#bold}
+### Gras {#bold}
 
-To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.
+Pour mettre un texte en gras, ajoutez deux astérisques ou deux traits de soulignement avant et après un mot ou une phrase. Pour mettre le milieu d'un mot en gras, ajoutez deux astérisques sans espace autour des lettres.
 
 {title="Markdown"}
 ~~~~~~~
-I love **bold text**.
+J'adore les **textes en gras**.
 
-I love __bold text__.
+J'adore les __textes en gras__.
 
-Love**is**bold
+L'amour**est**grand
 ~~~~~~~
 
-The HTML output of the first two examples is the same.
+La sortie HTML des deux premiers exemples est la même.
 
 {title="HTML", lang=html}
 ~~~~~~~
-I love <strong>bold text</strong>.
+J'adore les<strong>texes en gras</strong>.
 
-Love<strong>is</strong>bold
+L'amour <strong>est</strong> grand
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à ceci :
 
-I love **bold text**.
+J'adore les **textes en gras**.
 
-Love**is**bold
+L'amour**est**grand
 
-#### Bold Best Practices
+#### Bonnes pratiques avec le gras
 
-Markdown applications don't agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to bold the middle of a word for emphasis.
+Les applications Markdown ne s'accordent pas sur la manière de gérer les caractères de soulignement au milieu d'un mot. Par souci de compatibilité, utilisez des astérisques pour mettre en gras le milieu d'un mot afin de le mettre en valeur.
 
-| Do this | Don't do this |
+| Faites ceci | Ne faites pas cela |
 |------------|-------------------|
-| `Love**is**bold` | `Love__is__bold` |
+| `L'amour**est**grand` | `L'amour__est__grand` |
 
-### Italic {#italic}
+### Italique {#italic}
 
-To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.
+Pour mettre un texte en italique, ajoutez un astérisque ou un trait de soulignement avant et après un mot ou une phrase. Pour mettre en italique le milieu d'un mot, ajoutez un astérisque sans espace autour des lettres.
 
 {title="Markdown"}
 ~~~~~~~
-The *cat's meow*.
+Le *miaou du chat*.
 
-The _cat's meow_.
+Le _miaou du chat_.
 
-A*cat*meow
+Un*chat*miaule
 ~~~~~~~
 
-The HTML output of the first two examples is the same.
+La sortie HTML des deux premiers exemples est la même.
 
 {title="HTML", lang=html}
 ~~~~~~~
-The <em>cat's meow</em>.
+Le <em>miaulement du chat</em>.
 
-A<em>cat</em>meow
+Un<em>chat</em>miaule
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat final ressemble à ceci :
 
-The *cat's meow*.
+Le *miaulement du chat*.
 
-A*cat*meow
+Un*chat*miaule
 
-#### Italic Best Practices
+#### Bonnes pratiques avec l'italique
 
-Markdown applications don’t agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to italicize the middle of a word for emphasis.
+Les applications Markdown ne s'accordent pas sur la manière de traiter les traits de soulignement au milieu d'un mot. Pour des raisons de compatibilité, utilisez les astérisques pour mettre en italique le milieu d'un mot.
 
-| Do this | Don't do this |
+| Faites ceci | Ne faites pas cela |
 |------------|-------------------|
-| `A*cat*meow` | `A_cat_meow` |
+| `Un*chat*miaule` | `Un_chat_miaule` |
 
-### Bold and Italic
+### Gras et italique
 
-To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase. To bold and italicize the middle of a word for emphasis, add three asterisks without spaces around the letters.
+Pour mettre du texte en gras et en italique en même temps, ajoutez trois astérisques ou caractères de soulignement avant et après un mot ou une phrase. Pour mettre en gras et en italique le milieu d'un mot, ajoutez trois astérisques sans espace autour des lettres.
 
 {title="Markdown"}
 ~~~~~~~
-***Important*** text.
+Texte ***important***.
 
-___Important___ text.
+Texte ___important___.
 
-__*Important*__ text.
+Texte __*important*__.
 
-**_Important_** text.
+**_important_** et à lire.
 
-Really***very***important text.
+Très***très***important et à lire.
 ~~~~~~~
 
-The HTML output of the first four examples is the same.
+La sortie HTML des quatre premiers exemples est la même.
 
 {title="HTML", lang=html}
 ~~~~~~~
-<strong><em>Important</em></strong> text.
+Texte <strong><em>important</em></strong>.
 
-Really<strong><em>very</em></strong>important text.
+Texte trés<strong><em>très</em></strong>important.
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à ceci :
 
-***Important*** text.
+Texte ***important***.
 
-Really***very***important text.
+Texte très***très***important.
 
-#### Bold and Italic Best Practices
+#### Bonnes pratiques avec le gras-italique
 
-Markdown applications don’t agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to bold and italicize the middle of a word for emphasis.
+Les applications Markdown ne s'accordent pas sur la manière de gérer les caractères de soulignement au milieu d'un mot. Pour des raisons de compatibilité, utilisez les astérisques pour mettre en gras et en italique le milieu d'un mot afin de le mettre en valeur.
 
-| Do this | Don't do this |
+| Faites ceci | Ne faites pas cela |
 |------------|-------------------|
-| `Really***very***important text. ` | `Really___very___important text.` |
+| `Texte très***très***important text. ` | `Texte très___très___important.` |
 
-## Blockquotes {#blockquotes}
+## Citations {#blockquotes}
 
-To create a blockquote, add a `>` in front of a paragraph.
+Pour créer une citation en bloc, ajoutez un `>` devant un paragraphe.
 
 {title="Markdown"}
 ~~~~~~~
-> Dorothy followed her through many rooms.
+> Dorothy l'a suivie à travers de nombreuses pièces.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
 <blockquote>
-  <p>Dorothy followed her through many rooms.</p>
+  <p>Dorothy l'a suivie à travers de nombreuses pièces.</p>
 </blockquote>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à cela :
 
-> Dorothy followed her through many rooms.
+> Dorothy l'a suivie à travers de nombreuses pièces.
 
-### Blockquotes with Multiple Paragraphs
+### Citations avec plusieurs paragraphes
 
-Blockquotes can contain multiple paragraphs. Add a `>` on the blank lines between the paragraphs.
+Les citations peuvent contenir plusieurs paragraphes. Ajoutez un `>` sur les lignes vides entre les paragraphes.
 
 {title="Markdown"}
 ~~~~~~~
-> This the first paragraph.
+> Ceci est le premier paragraphe.
 >
-> And this is the second paragraph.
+> Et cecla est le deuxième paragraphe.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
 <blockquote>
-  <p>This the first paragraph.</p>
-  <p>And this is the second paragraph.</p>
+  <p>Ceci est le premier paragraphe.</p>
+  <p>Et cela est le deuxième paragraphe.</p>
 </blockquote>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résulat ressemble à ceci :
 
-> This the first paragraph.
+> Ceci est le premier paragraphe.
 >
-> And this is the second paragraph.
+> Cela est le deuxième paragraphe.
 
-### Nested Blockquotes
+### Citations à plusieurs niveaux
 
-Blockquotes can be nested. Add a `>>` in front of the paragraph you want to nest.
+Les citations peuvent se trouver à l'intérieur d'une autre citation. Dans ce cas, ajouter `>>` devant le paragraphe de deuxième niveau.Add a `>>` in front of the paragraph you want to nest.
 
 {title="Markdown"}
 ~~~~~~~
-> This the first paragraph.
+> Ceci est le premier paragraphe.
 >
->> And this is the nested paragraph.
+>> Cela est le deuxième paragraphe.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
 <blockquote>
-  <p>This the first paragraph.</p>
+  <p>Ceci est le premier paragraphe.</p>
   <blockquote>
-    <p>And this is the nested paragraph.</p>
+    <p>Cela est le deuxième paragraphe.</p>
   </blockquote>
 </blockquote>
 ~~~~~~~
 
-The rendered output looks like this:
+Le résultat ressemble à ceci :
 
-> This the first paragraph.
+> Ceci est le premier paragraphe.
 >
->> And this is the nested paragraph.
+>> Cela est le deuxième paragraphe.
 
-### Blockquotes with Other Elements
+### Citations en bloc avec d'autres éléments
 
-Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.
+Les guillemets peuvent contenir d'autres éléments au format Markdown. Tous les éléments ne peuvent pas être utilisés - vous devrez expérimenter pour voir ceux qui fonctionnent.
 
 {title="Markdown"}
 ~~~~~~~
-> ##### The quarterly results look great!
+> ##### Les résultats trimestriels sont excellents !
 >
-> - Revenue was off the chart.
-> - Profits were higher than ever.
+> - Les recettes ont atteint des sommets.
+> - Les bénéfices sont plus élevés que jamais.
 >
->  *Everything* is going **well**.
+> *Tout* va **bien**.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
 <blockquote>
-  <h5>The quarterly results look great!</h5>
+  <h5>Les résultats trimestriels sont excellents !</h5>
   <ul>
-    <li>Revenue was off the chart.</li>
-    <li>Profits were higher than ever.</li>
+    <li>Les recettes ont atteint des sommets.</li>
+    <li>Les bénéfices sont plus élevés que jamais.</li>
   </ul>
-  <p><em>Everything</em> is going <strong>well</strong>.</p>
+  <p><em>Tout</em> va <strong>bien</strong>.</p>
 </blockquote>
 ~~~~~~~
 
 The rendered output looks like this:
 
-> ##### The quarterly results look great!
+> ##### Les résultats trimestriels sont excellents !
 >
-> - Revenue was off the chart.
-> - Profits were higher than ever.
+> - Les recettes ont atteint des sommets.
+> - Les bénéfices sont plus élevés que jamais.
 >
->  *Everything* is going **well**.
+>  *Tout* va **bien**.
 
-## Lists
+## Listes
 
-You can organize items into ordered and unordered lists.
+Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.
 
 ### Ordered Lists {#ordered-lists}
 
