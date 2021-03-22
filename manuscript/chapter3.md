@@ -45,21 +45,21 @@ Pour créer des paragraphes, utilisez une ligne blanche pour séparer une ou plu
 
 {title="Markdown"}
 ~~~~~~~
-J'aime beacuoup utiliser Markdown.
+J'aime beaucoup utiliser Markdown.
 
 Je pense l'utiliser tout le temps dès aujourd'hui.
 ~~~~~~~
 
 {title="HTML", lang=html}
 ~~~~~~~
-<p>J'aime beacuoup utiliser Markdown.</p>
+<p>J'aime beaucoup utiliser Markdown.</p>
 
 <p>Je pense l'utiliser tout le temps dès aujourd'hui.</p>
 ~~~~~~~
 
 Le texte mis en forme resemble alors à ceci :
 
-J'aime beacuoup utiliser Markdown.
+J'aime beaucoup utiliser Markdown.
 
 Je pense l'utiliser tout le temps dès aujourd'hui.
 
