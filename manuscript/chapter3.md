@@ -124,7 +124,7 @@ J'adore les **textes en gras**.
 
 J'adore les __textes en gras__.
 
-L'amour**est**grand
+L'amour **est** grand
 ~~~~~~~
 
 La sortie HTML des deux premiers exemples est la même.
@@ -140,7 +140,7 @@ Le résultat ressemble à ceci :
 
 J'adore les **textes en gras**.
 
-L'amour**est**grand
+L'amour **est** grand
 
 #### Bonnes pratiques avec le gras
 
@@ -148,7 +148,7 @@ Les applications Markdown ne s'accordent pas sur la manière de gérer les carac
 
 | Faites ceci | Ne faites pas cela |
 |------------|-------------------|
-| `L'amour**est**grand` | `L'amour__est__grand` |
+| `L'amour **est** grand` | `L'amour __est__ grand` |
 
 ### Italique {#italic}
 
@@ -160,7 +160,7 @@ Le *miaou du chat*.
 
 Le _miaou du chat_.
 
-Un*chat*miaule
+Un *chat* miaule
 ~~~~~~~
 
 La sortie HTML des deux premiers exemples est la même.
@@ -169,14 +169,14 @@ La sortie HTML des deux premiers exemples est la même.
 ~~~~~~~
 Le <em>miaulement du chat</em>.
 
-Un<em>chat</em>miaule
+Un <em>chat</em> miaule
 ~~~~~~~
 
 Le résultat final ressemble à ceci :
 
 Le *miaulement du chat*.
 
-Un*chat*miaule
+Un *chat* miaule
 
 #### Bonnes pratiques avec l'italique
 
@@ -184,7 +184,7 @@ Les applications Markdown ne s'accordent pas sur la manière de traiter les trai
 
 | Faites ceci | Ne faites pas cela |
 |------------|-------------------|
-| `Un*chat*miaule` | `Un_chat_miaule` |
+| `Un *chat* miaule` | `Un _chat_ miaule` |
 
 ### Gras et italique
 
@@ -198,9 +198,9 @@ Texte ___important___.
 
 Texte __*important*__.
 
-**_important_** et à lire.
+Texte **_important_**.
 
-Très***très***important et à lire.
+Texte très ***très*** important.
 ~~~~~~~
 
 La sortie HTML des quatre premiers exemples est la même.
@@ -209,14 +209,14 @@ La sortie HTML des quatre premiers exemples est la même.
 ~~~~~~~
 Texte <strong><em>important</em></strong>.
 
-Texte trés<strong><em>très</em></strong>important.
+Texte trés <strong><em>très</em></strong> important.
 ~~~~~~~
 
 Le résultat ressemble à ceci :
 
 Texte ***important***.
 
-Texte très***très***important.
+Texte très ***très*** important.
 
 #### Bonnes pratiques avec le gras-italique
 
@@ -224,7 +224,7 @@ Les applications Markdown ne s'accordent pas sur la manière de gérer les carac
 
 | Faites ceci | Ne faites pas cela |
 |------------|-------------------|
-| `Texte très***très***important text. ` | `Texte très___très___important.` |
+| `Texte très ***très*** important.` | `Texte très ___très___ important.` |
 
 ## Citations {#blockquotes}
 
@@ -324,7 +324,7 @@ Les guillemets peuvent contenir d'autres éléments au format Markdown. Tous les
 </blockquote>
 ~~~~~~~
 
-The rendered output looks like this:
+Les résultat ressemble à ceci :
 
 > ##### Les résultats trimestriels sont excellents !
 >
